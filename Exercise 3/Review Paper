@@ -1,7 +1,12 @@
 
 						REVIEW PAPER
 
-Pola mining dalam transaksi database, database time-series, dan berbagai jenis database yang lain telah populeh dipelajari dalam penelitian data mining. Penelitian sebelumnya sebagian besar mengadopsi Apriori seperti set generasi kandidat dan tes pendekatan. Namun ser generasi kandidat masih mahal, terutama bila ada sejumlah pola yang besar dan ataupun pola yang panjang. Output yang diharapkan dari usulan novel struktur frequent-pattern-tree (FP-tree) yaitu untuk menggali pola set yang lengkap untuk memenuhi pertumbuhan fragment. Juga mendapatkan efisiensi yang dicapai dengan 3 teknik, antara lain:
+Pola mining dalam transaksi database, database time-series, dan berbagai jenis database yang lain telah populeh 
+dipelajari dalam penelitian data mining. Penelitian sebelumnya sebagian besar mengadopsi Apriori seperti set 
+generasi kandidat dan tes pendekatan. Namun ser generasi kandidat masih mahal, terutama bila ada sejumlah pola yang 
+besar dan ataupun pola yang panjang. Output yang diharapkan dari usulan novel struktur frequent-pattern-tree (FP-tree) 
+yaitu untuk menggali pola set yang lengkap untuk memenuhi pertumbuhan fragment. Juga mendapatkan efisiensi yang 
+dicapai dengan 3 teknik, antara lain:
 1. Database yang besar dikompresi menjadi padat, struktur data yang lebih kecil, FP-tree yang
     menghindari biaya, scan database yang berulang.
 2. Basis FP-tree kami mengadopsi metode pola pertumbuhan fargmen untuk menghindari biaya
@@ -10,16 +15,23 @@ Pola mining dalam transaksi database, database time-series, dan berbagai jenis d
     menjadi satu set tugas yang lebih kecil.
 
 Tahapan metode dalam penelitian ini antara lain:
-Pembangunan pengisi FP-tree disk
-Kunggulan dari metode ini yaitu proyeksi database sebagai pendekatan yang efektif. Merupakan alternatif yang menarik untuk membangun pengisi FP-tree disk. Pengaplikasiannya menggunakan sturktur B+ tree yang cukup populer digunakan dalam database relasional dan dapat digunakan untuk index FP-tree  juga.
-Update incremental dari FP-tree
-Jika terwujud FP-tree mengambil 1 sebagai dukungan minimum, update tidak akan menimbulkan masalah sejak penambahan record yang baru. Namun, FP-tree yang penuh dapat menjadi masalah yang cukup besar. Sehingga pengaturan 1 sebagai dukungan minimum bukanlah menjadi solusi yang baik.
-Penggalian FP-tree dengan kendala
-Di sini menampilkan bagaimana menerapkan struktur FP-tree untuk pertambangan pola yang sering oleh penggabungan kendala terkait dengan satu set item.
-Penggalian FP-tree dari frekuensi pola yang lain
+-Pembangunan pengisi FP-tree disk
+Kunggulan dari metode ini yaitu proyeksi database sebagai pendekatan yang efektif. Merupakan alternatif yang menarik 
+untuk membangun pengisi FP-tree disk. Pengaplikasiannya menggunakan sturktur B+ tree yang cukup populer digunakan dalam 
+database relasional dan dapat digunakan untuk index FP-tree  juga.
+-Update incremental dari FP-tree
+Jika terwujud FP-tree mengambil 1 sebagai dukungan minimum, update tidak akan menimbulkan masalah sejak penambahan 
+record yang baru. Namun, FP-tree yang penuh dapat menjadi masalah yang cukup besar. Sehingga pengaturan 1 sebagai 
+dukungan minimum bukanlah menjadi solusi yang baik.
+-Penggalian FP-tree dengan kendala
+Di sini menampilkan bagaimana menerapkan struktur FP-tree untuk pertambangan pola yang sering oleh penggabungan kendala 
+terkait dengan satu set item.
+-Penggalian FP-tree dari frekuensi pola yang lain
 Penggalian berbasis FP-tree dapat diperpanjang untuk banyak penggalian jenis lain yang menarik frekuensi pola. 
 
-Kesimpulan dari paper ini penulis telah mengusulkan struktur data baru, frequent pattern tree  (FP-tree), untuk menyimpan dikompresi, informasi penting tentang frekuensi pola, dan pengembangan metode pola growth. Ada beberapa keuntungan dari FP-growth atas pendekatan lain:
+Kesimpulan dari paper ini penulis telah mengusulkan struktur data baru, frequent pattern tree  (FP-tree), untuk menyimpan 
+dikompresi, informasi penting tentang frekuensi pola, dan pengembangan metode pola growth. Ada beberapa keuntungan dari 
+FP-growth atas pendekatan lain:
 	1. Ini membangun FP-tree yang sangat kompak, yang biasanya jauh lebih kecil daripada 
              database asli dan dengan demikian menyimpan scan database yang mahal dalam proses 
              penggalian berikutnya.
@@ -30,4 +42,5 @@ Kesimpulan dari paper ini penulis telah mengusulkan struktur data baru, frequent
              optimasi yang lain, termasuk pola gen	erasi langsung untuk satu tree-path dan 
              mempekerjakan frekuensi peristiwa paling akhir sebagai akhiran, juga berkontribusi 
              terhadap efisiensi dari metode.
-Saran yang diberikan adalah pendekatan untuk mengintegrasikan dua algoritma dan dinamis yang memilih algoritma berbasis H-struct dan FP-tree berdasarkan karakteristik dari distribusi arus data.
+Saran yang diberikan adalah pendekatan untuk mengintegrasikan dua algoritma dan dinamis yang memilih algoritma berbasis 
+H-struct dan FP-tree berdasarkan karakteristik dari distribusi arus data.
