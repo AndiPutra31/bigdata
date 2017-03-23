@@ -1,18 +1,12 @@
 
 						REVIEW PAPER
 
-Pola mining dalam transaksi database, database time-series, dan berbagai jenis database yang lain telah populeh 
-dipelajari dalam penelitian data mining. Penelitian sebelumnya sebagian besar mengadopsi Apriori seperti set 
-generasi kandidat dan tes pendekatan. Namun ser generasi kandidat masih mahal, terutama bila ada sejumlah pola yang 
-besar dan ataupun pola yang panjang. Output yang diharapkan dari usulan novel struktur frequent-pattern-tree (FP-tree) 
-yaitu untuk menggali pola set yang lengkap untuk memenuhi pertumbuhan fragment. Juga mendapatkan efisiensi yang 
-dicapai dengan 3 teknik, antara lain:
-1. Database yang besar dikompresi menjadi padat, struktur data yang lebih kecil, FP-tree yang
-    menghindari biaya, scan database yang berulang.
-2. Basis FP-tree kami mengadopsi metode pola pertumbuhan fargmen untuk menghindari biaya
-    generasi berskala besar dari kandidat set.
-3. Sebuah basis partisi, metode divide and conquer digunakan untuk mengurangi tugas mining
-    menjadi satu set tugas yang lebih kecil.
+Pola mining dalam berbagai database seperti transaksi database, database time-series sudah umum 
+dipelajari dalam penelitian data mining. Pada penelitian sebelum-sebelumnya sebagian besar menggunakan pendekatan Apriori. Namun outputnya masih "mahal", terutama pada pola yang 
+besar dan ataupun yang panjang.Efisiensi mining dapat dicapai melalui tiga teknik , yaitu : 
+1. Database yang besar dikompresi menjadi padat, berstruktur data yang lebih kecil dimana dapat menghindari biaya yang besar dan scan database yang berulang-ulang.
+2. FP-tree mengadopsi metode pola pertumbuhan fragmen untuk menghindari biaya besar.
+3. Sebuah basis partisi, metode divide and conquer digunakan untuk mengurangi tugas mining menjadi satu set tugas yang lebih kecil.
 
 Tahapan metode dalam penelitian ini antara lain:
 -Pembangunan pengisi FP-tree disk
